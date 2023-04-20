@@ -65,6 +65,6 @@ console.log(me.shoeCount);
 
 me.favoritecolor = "purple";
 console.log(me.favoritecolor);
-console.log(me);
+console.log('A little about me', me);
 
 //don't forget quotes on the new property as it;s undefined without them.
