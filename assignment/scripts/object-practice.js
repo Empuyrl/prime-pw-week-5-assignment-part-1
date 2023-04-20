@@ -28,17 +28,16 @@ const fullName = (me.firstName + ' ' + me.lastName);
 
 console.log(fullName)
 
-
+//space between the ' ' for space to show in console
 
 /* 3. Nested arrays
   - Console.log your first favorite food
   - Console.log your last favorite food 
 */
-let favThreeFoods = ['ramen', 'pasta', 'chocolate'];
+console.log(me.favThreeFoods[0]);
+console.log(me.favThreeFoods[2]);
 
-console.log(favThreeFoods[0]);
-console.log(favThreeFoods[2]);
-
+//.me is constantly pulling information from the me object
 
 /* 4. Change a property of an existing object.
   - Console.log your current shoe count.
@@ -46,10 +45,15 @@ console.log(favThreeFoods[2]);
   - Set your object's shoeCount to be what it was plus 1
   - Console.log your updated shoe count. 
 */
-let shoeCount = 4;
-console.log(shoeCount);
-shoeCount ++
-console.log(shoeCount);
+console.log(me.shoeCount);
+me.shoeCount++;
+console.log(me.shoeCount);
+
+//below can do the same, just doesn't call the object
+//let shoeCount = 4;
+//console.log(shoeCount);
+//shoeCount ++
+//console.log(shoeCount);
 
 
 /* 5. Add a new property to an existing object.
@@ -59,7 +63,8 @@ console.log(shoeCount);
   - Console.log your object
 */
 
-let favoriteColor = purple;
-
-console.log(favoriteColor);
+me.favoritecolor = "purple";
+console.log(me.favoritecolor);
 console.log(me);
+
+//don't forget quotes on the new property as it;s undefined without them.
